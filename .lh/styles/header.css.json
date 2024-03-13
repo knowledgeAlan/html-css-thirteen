@@ -1,0 +1,54 @@
+{
+    "sourceFile": "styles/header.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1710315217596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710315251196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,6 +3,13 @@\n     display: flex;\n     flex-direction: row;\n     justify-content: space-between;\n \n-    \n+\n+}\n+\n+\n+.left-section {\n+\n+    display: flex;\n+    align-items: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710315290730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,12 @@\n .left-section {\n \n     display: flex;\n     align-items: center;\n+}\n+\n+.hamburger-menu {\n+\n+    height: 24px;\n+    margin-left: 24px;\n+    margin-right: 24px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710315940716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,23 @@\n \n     height: 24px;\n     margin-left: 24px;\n     margin-right: 24px;\n+}\n+\n+\n+.youtube-logo {\n+    height: 20px ;\n+}\n+\n+.midlle-section {\n+    flex: 1;\n+    margin-left: 70px;\n+    margin-right:  35px;\n+    max-width: 500px;\n+    display: flex;\n+    align-items: center;\n+}\n+\n+.search-bar{\n+    flex: 1;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710316228947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,15 @@\n }\n \n .search-bar{\n     flex: 1;\n-}\n\\ No newline at end of file\n+    height: 36px;\n+    padding-left: 10px;\n+    font-size: 16px;\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    border-radius: 2px;\n+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n+    width: 0;\n+\n+}   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710316270312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,5 +46,14 @@\n     border-radius: 2px;\n     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n     width: 0;\n \n-}   \n\\ No newline at end of file\n+}   \n+\n+\n+\n+.search-bar::placeholder {\n+    font-family: Roboto,Arial;\n+    font-size: 16px;\n+}\n+\n+\n"
+                },
+                {
+                    "date": 1710316379082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,4 +56,16 @@\n     font-size: 16px;\n }\n \n \n+.search-button{\n+    height: 40px;\n+    width: 66px;\n+    background-color: rgb(240, 240, 240);\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    margin-left: -1px;\n+    margin-right: 10px;\n+}\n+\n+\n"
+                },
+                {
+                    "date": 1710316429489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,77 @@\n+.header {\n+    height: 55px;\n+    display: flex;\n+    flex-direction: row;\n+    justify-content: space-between;\n+\n+\n+}\n+\n+\n+.left-section {\n+\n+    display: flex;\n+    align-items: center;\n+}\n+\n+.hamburger-menu {\n+\n+    height: 24px;\n+    margin-left: 24px;\n+    margin-right: 24px;\n+}\n+\n+\n+.youtube-logo {\n+    height: 20px ;\n+}\n+\n+.midlle-section {\n+    flex: 1;\n+    margin-left: 70px;\n+    margin-right:  35px;\n+    max-width: 500px;\n+    display: flex;\n+    align-items: center;\n+}\n+\n+.search-bar{\n+    flex: 1;\n+    height: 36px;\n+    padding-left: 10px;\n+    font-size: 16px;\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    border-radius: 2px;\n+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n+    width: 0;\n+\n+}   \n+\n+\n+\n+.search-bar::placeholder {\n+    font-family: Roboto,Arial;\n+    font-size: 16px;\n+}\n+\n+\n+.search-button{\n+    height: 40px;\n+    width: 66px;\n+    background-color: rgb(240, 240, 240);\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    margin-left: -1px;\n+    margin-right: 10px;\n+}\n+\n+\n+.search-icon {\n+    height: 25px;\n+    margin-top: 4px;\n+}\n+\n+\n"
+                },
+                {
+                    "date": 1710316498169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,84 @@\n+.header {\n+    height: 55px;\n+    display: flex;\n+    flex-direction: row;\n+    justify-content: space-between;\n+\n+\n+}\n+\n+\n+.left-section {\n+\n+    display: flex;\n+    align-items: center;\n+}\n+\n+.hamburger-menu {\n+\n+    height: 24px;\n+    margin-left: 24px;\n+    margin-right: 24px;\n+}\n+\n+\n+.youtube-logo {\n+    height: 20px ;\n+}\n+\n+.midlle-section {\n+    flex: 1;\n+    margin-left: 70px;\n+    margin-right:  35px;\n+    max-width: 500px;\n+    display: flex;\n+    align-items: center;\n+}\n+\n+.search-bar{\n+    flex: 1;\n+    height: 36px;\n+    padding-left: 10px;\n+    font-size: 16px;\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    border-radius: 2px;\n+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n+    width: 0;\n+\n+}   \n+\n+\n+\n+.search-bar::placeholder {\n+    font-family: Roboto,Arial;\n+    font-size: 16px;\n+}\n+\n+\n+.search-button{\n+    height: 40px;\n+    width: 66px;\n+    background-color: rgb(240, 240, 240);\n+    border-width: 1px;\n+    border-style: solid;\n+    border-color: rgb(192, 192, 192);\n+    margin-left: -1px;\n+    margin-right: 10px;\n+}\n+\n+\n+.search-icon {\n+    height: 25px;\n+    margin-top: 4px;\n+}\n+\n+\n+.voice-search-button{\n+    height: 40px;\n+    width: 40px;\n+    border-radius: 20px;\n+    border: none;\n+    background-color: rgb(245, 245, 245);\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710325811933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,150 +81,6 @@\n     border-radius: 20px;\n     border: none;\n     background-color: rgb(245, 245, 245);\n }\n-.header {\n-    height: 55px;\n-    display: flex;\n-    flex-direction: row;\n-    justify-content: space-between;\n \n \n-}\n-\n-\n-.left-section {\n-\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.hamburger-menu {\n-\n-    height: 24px;\n-    margin-left: 24px;\n-    margin-right: 24px;\n-}\n-\n-\n-.youtube-logo {\n-    height: 20px ;\n-}\n-\n-.midlle-section {\n-    flex: 1;\n-    margin-left: 70px;\n-    margin-right:  35px;\n-    max-width: 500px;\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.search-bar{\n-    flex: 1;\n-    height: 36px;\n-    padding-left: 10px;\n-    font-size: 16px;\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    border-radius: 2px;\n-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n-    width: 0;\n-\n-}   \n-\n-\n-\n-.search-bar::placeholder {\n-    font-family: Roboto,Arial;\n-    font-size: 16px;\n-}\n-\n-\n-.search-button{\n-    height: 40px;\n-    width: 66px;\n-    background-color: rgb(240, 240, 240);\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    margin-left: -1px;\n-    margin-right: 10px;\n-}\n-\n-\n-.search-icon {\n-    height: 25px;\n-    margin-top: 4px;\n-}\n-\n-\n-.header {\n-    height: 55px;\n-    display: flex;\n-    flex-direction: row;\n-    justify-content: space-between;\n-\n-\n-}\n-\n-\n-.left-section {\n-\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.hamburger-menu {\n-\n-    height: 24px;\n-    margin-left: 24px;\n-    margin-right: 24px;\n-}\n-\n-\n-.youtube-logo {\n-    height: 20px ;\n-}\n-\n-.midlle-section {\n-    flex: 1;\n-    margin-left: 70px;\n-    margin-right:  35px;\n-    max-width: 500px;\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.search-bar{\n-    flex: 1;\n-    height: 36px;\n-    padding-left: 10px;\n-    font-size: 16px;\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    border-radius: 2px;\n-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n-    width: 0;\n-\n-}   \n-\n-\n-\n-.search-bar::placeholder {\n-    font-family: Roboto,Arial;\n-    font-size: 16px;\n-}\n-\n-\n-.search-button{\n-    height: 40px;\n-    width: 66px;\n-    background-color: rgb(240, 240, 240);\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    margin-left: -1px;\n-    margin-right: 10px;\n-}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1710315217596,
+            "name": "Commit-0",
+            "content": ".header {\n    height: 55px;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n\n    \n}"
+        }
+    ]
+}

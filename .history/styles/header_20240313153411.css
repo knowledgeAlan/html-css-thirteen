@@ -1,0 +1,15 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+
+
+.left-section {
+
+    display: flex;
+    align-items: center;
+}

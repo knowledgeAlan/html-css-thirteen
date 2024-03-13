@@ -1,0 +1,18 @@
+{
+    "sourceFile": "test.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1710302334579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1710302334579,
+            "name": "Commit-0",
+            "content": "function wordBreak(s: string, wordDict: string[]): boolean {\n\n    let len:number = s.length;\n    let dp:boolean[] = new Array(len+1).fill(false);\n    \n    dp[len] = true;\n    for(let i:number = len-1; i >= 0; i--){\n  \n      for(let j:number = 0;j < wordDict.length; j++){\n  \n          if(i+wordDict[j].length <= len){\n              if(wordDict[j] === s.substring(i,i+wordDict[j].length)){\n                  dp[i]= dp[i+wordDict[j].length];\n              }\n  \n              if(dp[i]){\n                  break;\n              }\n          }\n      }\n  \n      return dp[0];\n    }\n  \n  \n  };\n\n  wordBreak(\"leetcode\",[\"leet\",\"code\"])"
+        }
+    ]
+}

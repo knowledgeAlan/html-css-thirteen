@@ -1,0 +1,18 @@
+{
+    "sourceFile": "youtube.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1710241289706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1710241289706,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n\n<head>\n    <title>Youtube.com Clone</title>\n\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n    <style >\n\n        p {\n            font-family: Roboto,Arial;\n            margin-top: 0;\n            margin-bottom: 0;\n        }\n        .thumbnail {\n            width: 300px;\n            display: block;\n        }\n\n        .search-bar{\n             \n            display: block;\n        }\n\n        .video-title {\n            margin-top: 0;\n            font-size: 14px;\n            font-weight: 500;\n            line-height: 20px;\n            margin-bottom: 12px;\n        }\n\n        .video-preview {\n\n            width: 300px;\n            display: inline-block;\n            vertical-align: top;\n            margin-right: 15px;\n        }\n\n        .channel-picture {\n            display:  inline-block;\n            width: 50px;\n            vertical-align: top;\n\n        }\n\n        .thumbnail-row{\n            margin-bottom: 12px;\n        }\n\n        .video-author,.video-stats {\n            font-size: 12px;\n            color: rgb(96, 96, 96);\n        }\n\n\n        .video-author{\n            margin-bottom: 4px;\n        }\n        \n    </style>\n\n    <body>\n\n \n        \n        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n       \n\n        <div class=\"video-preview\">\n\n            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n\n            <p class=\"video-title\">\n                Talking Tech and AI with Google CEO Sundar Pichai!\n            </p>\n\n            <p class=\"video-author\">\n                Marques Brownlee\n            </p>\n\n            <p class=\"video-stats\">\n                3.4M views &#183; 6 months ago\n            </p>\n        </div>\n\n\n        <div class=\"video-preview\">\n\n            <div class=\"thumbnail-row\">\n                <img class=\"thumbnail\" src=\"thumbnails/thumbnail-2.webp\" alt=\"zdd\">\n            </div>\n\n            <div class=\"video-info\">\n                <p class=\"video-title\">\n                    Try not to laugh challenge #9\n                </p>\n\n                <p class=\"video-author\">\n                       Markiplier \n                </p>\n\n                <p class=\"video-stats\">\n                    19M views &#183; 4 years ago \n                </p>\n\n            </div>\n        </div>\n\n        <div class=\"video-preview\">\n            <div class=\"thumbnail-row\">\n                    <img class=\"thumbnail\" src=\"thumbnails/thumbnail-3.webp\">\n            </div>\n\n            \n            \n        </div>\n    </body>\n</head>\n</html>"
+        }
+    ]
+}
