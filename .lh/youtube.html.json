@@ -3,11 +3,43 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1710241289706,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1710327007807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,64 +6,13 @@\n \n     <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n     <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n     <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\" rel=\"stylesheet\">\n-    <style >\n+   \n+    <link rel=\"stylesheet\" href=\"styles/general.css\">\n+    <link rel=\"stylesheet\" href=\"styles/header.css\">\n+    <link rel=\"stylesheet\" href=\"styles/video.css\">\n \n-        p {\n-            font-family: Roboto,Arial;\n-            margin-top: 0;\n-            margin-bottom: 0;\n-        }\n-        .thumbnail {\n-            width: 300px;\n-            display: block;\n-        }\n-\n-        .search-bar{\n-             \n-            display: block;\n-        }\n-\n-        .video-title {\n-            margin-top: 0;\n-            font-size: 14px;\n-            font-weight: 500;\n-            line-height: 20px;\n-            margin-bottom: 12px;\n-        }\n-\n-        .video-preview {\n-\n-            width: 300px;\n-            display: inline-block;\n-            vertical-align: top;\n-            margin-right: 15px;\n-        }\n-\n-        .channel-picture {\n-            display:  inline-block;\n-            width: 50px;\n-            vertical-align: top;\n-\n-        }\n-\n-        .thumbnail-row{\n-            margin-bottom: 12px;\n-        }\n-\n-        .video-author,.video-stats {\n-            font-size: 12px;\n-            color: rgb(96, 96, 96);\n-        }\n-\n-\n-        .video-author{\n-            margin-bottom: 4px;\n-        }\n-        \n-    </style>\n-\n     <body>\n \n  \n         \n"
+                },
+                {
+                    "date": 1710327121925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,58 +15,8 @@\n     <body>\n \n  \n         \n-        <input class=\"searh-bar\" type=\"text\" placeholder=\"Search\">\n-       \n-\n-        <div class=\"video-preview\">\n-\n-            <img class=\"thumbnail\" src=\"thumbnails/thumbnail.png\" alt=\"Dinosaur\"/>\n-\n-            <p class=\"video-title\">\n-                Talking Tech and AI with Google CEO Sundar Pichai!\n-            </p>\n-\n-            <p class=\"video-author\">\n-                Marques Brownlee\n-            </p>\n-\n-            <p class=\"video-stats\">\n-                3.4M views &#183; 6 months ago\n-            </p>\n-        </div>\n-\n-\n-        <div class=\"video-preview\">\n-\n-            <div class=\"thumbnail-row\">\n-                <img class=\"thumbnail\" src=\"thumbnails/thumbnail-2.webp\" alt=\"zdd\">\n-            </div>\n-\n-            <div class=\"video-info\">\n-                <p class=\"video-title\">\n-                    Try not to laugh challenge #9\n-                </p>\n-\n-                <p class=\"video-author\">\n-                       Markiplier \n-                </p>\n-\n-                <p class=\"video-stats\">\n-                    19M views &#183; 4 years ago \n-                </p>\n-\n-            </div>\n-        </div>\n-\n-        <div class=\"video-preview\">\n-            <div class=\"thumbnail-row\">\n-                    <img class=\"thumbnail\" src=\"thumbnails/thumbnail-3.webp\">\n-            </div>\n-\n-            \n-            \n-        </div>\n+        \n     </body>\n </head>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710410369989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n     <body>\n \n  \n         \n-        \n+        <div class=\"left-section\">\n+            \n+        </div>\n     </body>\n </head>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710410487520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,22 @@\n     <link rel=\"stylesheet\" href=\"styles/video.css\">\n \n     <body>\n \n+\n+        <div class=\"header\">\n+\n+\n+            <div class=\"left-section\">\n+\n+                <img class=\"hamburger-menu\" src=\"icons/hamburger-menu.svg\">\n+                <img class=\"youtube-logo\" src=\"icons/youtube-logo.svg\">\n+                \n+            </div>\n+\n+        </div>\n  \n         \n-        <div class=\"left-section\">\n-            \n-        </div>\n+      \n     </body>\n </head>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710411029490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,16 @@\n                 <img class=\"youtube-logo\" src=\"icons/youtube-logo.svg\">\n                 \n             </div>\n \n+            <div class=\"right-section\">\n+                <img class=\"upload-icon\" src=\"icons/upload.svg\">\n+                <img class=\"youtube-apps-icon\" src=\"icons/youtube-apps.svg\">\n+                <img class=\"notification-icon\" src=\"icons/notifications.svg\">\n+                <img class=\"current-user-picture\" src=\"channel-pictures/my-channel.jpeg\">\n+\n+            </div>\n+\n         </div>\n  \n         \n       \n"
+                },
+                {
+                    "date": 1710411135084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,17 @@\n                 <img class=\"youtube-logo\" src=\"icons/youtube-logo.svg\">\n                 \n             </div>\n \n+            <div class=\"middle-section\">\n+                <input class=\"search-bar\" type=\"text\" placeholder=\"Search\">\n+\n+                <button class=\"search-button\">\n+                    <img class=\"voice-search-icon\" src=\"icons/voice-search-icon.svg\">\n+                </button>\n+\n+            </div>\n+\n             <div class=\"right-section\">\n                 <img class=\"upload-icon\" src=\"icons/upload.svg\">\n                 <img class=\"youtube-apps-icon\" src=\"icons/youtube-apps.svg\">\n                 <img class=\"notification-icon\" src=\"icons/notifications.svg\">\n"
+                },
+                {
+                    "date": 1710411187978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n             <div class=\"middle-section\">\n                 <input class=\"search-bar\" type=\"text\" placeholder=\"Search\">\n \n                 <button class=\"search-button\">\n-                    <img class=\"voice-search-icon\" src=\"icons/voice-search-icon.svg\">\n+                    <img class=\"search-icon\" src=\"icons/search.svg\">\n                 </button>\n \n             </div>\n \n"
+                },
+                {
+                    "date": 1710411252476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,11 @@\n                 <button class=\"search-button\">\n                     <img class=\"search-icon\" src=\"icons/search.svg\">\n                 </button>\n \n+                <button class=\"voice-search-button\">\n+                       <img class=\"voice-search-button\" src=\"icons/voice-search-icon.svg\" >\n+                </button>\n             </div>\n \n             <div class=\"right-section\">\n                 <img class=\"upload-icon\" src=\"icons/upload.svg\">\n"
                 }
             ],
             "date": 1710241289706,

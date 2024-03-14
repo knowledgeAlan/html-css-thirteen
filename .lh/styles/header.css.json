@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1710315217596,
@@ -44,6 +44,26 @@
                 {
                     "date": 1710325811933,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,150 +81,6 @@\n     border-radius: 20px;\n     border: none;\n     background-color: rgb(245, 245, 245);\n }\n-.header {\n-    height: 55px;\n-    display: flex;\n-    flex-direction: row;\n-    justify-content: space-between;\n \n \n-}\n-\n-\n-.left-section {\n-\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.hamburger-menu {\n-\n-    height: 24px;\n-    margin-left: 24px;\n-    margin-right: 24px;\n-}\n-\n-\n-.youtube-logo {\n-    height: 20px ;\n-}\n-\n-.midlle-section {\n-    flex: 1;\n-    margin-left: 70px;\n-    margin-right:  35px;\n-    max-width: 500px;\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.search-bar{\n-    flex: 1;\n-    height: 36px;\n-    padding-left: 10px;\n-    font-size: 16px;\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    border-radius: 2px;\n-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n-    width: 0;\n-\n-}   \n-\n-\n-\n-.search-bar::placeholder {\n-    font-family: Roboto,Arial;\n-    font-size: 16px;\n-}\n-\n-\n-.search-button{\n-    height: 40px;\n-    width: 66px;\n-    background-color: rgb(240, 240, 240);\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    margin-left: -1px;\n-    margin-right: 10px;\n-}\n-\n-\n-.search-icon {\n-    height: 25px;\n-    margin-top: 4px;\n-}\n-\n-\n-.header {\n-    height: 55px;\n-    display: flex;\n-    flex-direction: row;\n-    justify-content: space-between;\n-\n-\n-}\n-\n-\n-.left-section {\n-\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.hamburger-menu {\n-\n-    height: 24px;\n-    margin-left: 24px;\n-    margin-right: 24px;\n-}\n-\n-\n-.youtube-logo {\n-    height: 20px ;\n-}\n-\n-.midlle-section {\n-    flex: 1;\n-    margin-left: 70px;\n-    margin-right:  35px;\n-    max-width: 500px;\n-    display: flex;\n-    align-items: center;\n-}\n-\n-.search-bar{\n-    flex: 1;\n-    height: 36px;\n-    padding-left: 10px;\n-    font-size: 16px;\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    border-radius: 2px;\n-    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);\n-    width: 0;\n-\n-}   \n-\n-\n-\n-.search-bar::placeholder {\n-    font-family: Roboto,Arial;\n-    font-size: 16px;\n-}\n-\n-\n-.search-button{\n-    height: 40px;\n-    width: 66px;\n-    background-color: rgb(240, 240, 240);\n-    border-width: 1px;\n-    border-style: solid;\n-    border-color: rgb(192, 192, 192);\n-    margin-left: -1px;\n-    margin-right: 10px;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1710326173295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,4 +83,8 @@\n     background-color: rgb(245, 245, 245);\n }\n \n \n+.video-search-icon {\n+    height: 24px;\n+    width: 40px;\n+}\n"
+                },
+                {
+                    "date": 1710326243344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,5 +86,8 @@\n \n .video-search-icon {\n     height: 24px;\n     width: 40px;\n+    border-radius: 20px;\n+    border: none;\n+    background-color: rgb(245, 245, 245);\n }\n"
+                },
+                {
+                    "date": 1710326371496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,4 +90,14 @@\n     border-radius: 20px;\n     border: none;\n     background-color: rgb(245, 245, 245);\n }\n+\n+.right-section {\n+    width: 180px;\n+    margin-right: 20px;\n+    display: flex;\n+    align-items: center;\n+    justify-content: space-between;\n+    flex-shrink: 0;\n+    \n+}\n"
+                },
+                {
+                    "date": 1710326616038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -98,6 +98,24 @@\n     display: flex;\n     align-items: center;\n     justify-content: space-between;\n     flex-shrink: 0;\n-    \n+\n }\n+\n+.upload-icon {\n+    height: 24px;\n+}\n+\n+.youtube-apps-icon{\n+    height: 24px;\n+}\n+\n+\n+.notifications-icon {\n+    height: 24px;\n+}\n+\n+.current-user-picture {\n+    height: 32px;\n+    border-radius: 16px ;\n+}\n"
+                },
+                {
+                    "date": 1710411327864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n .youtube-logo {\n     height: 20px ;\n }\n \n-.midlle-section {\n+.middle-section {\n     flex: 1;\n     margin-left: 70px;\n     margin-right:  35px;\n     max-width: 500px;\n"
                 }
             ],
             "date": 1710315217596,

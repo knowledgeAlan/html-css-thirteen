@@ -1,0 +1,18 @@
+{
+    "sourceFile": "styles/video.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1710326937280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1710326937280,
+            "name": "Commit-0",
+            "content": ".thumbnail{\n    width: 100%;\n}\n\n.video-title {\n    margin-top: 0;\n    font-size: 14px;\n    font-weight: 500px ;\n    line-height: 20px;\n    margin-bottom: 12px;\n}\n\n\n.video-info-grid {\n    display: grid;\n    grid-template-columns: 50px 1fr;\n}\n\n\n.profile-picture{\n    width: 40px;\n    border-radius: 50px;\n}\n\n\n.thumbnail-row {\n    margin-bottom: 12px;\n}\n\n.video-author,.video-stats {\n    font-size: 12px;\n    color: rgb(96, 96, 96);\n}\n\n.video-author {\n    margin-bottom: 4px;\n}\n\n.video-grid{\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    column-gap: 16px;\n    row-gap: 40px;\n}"
+        }
+    ]
+}

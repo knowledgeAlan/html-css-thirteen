@@ -26,7 +26,7 @@
     height: 20px ;
 }
 
-.middle-section {
+.midlle-section {
     flex: 1;
     margin-left: 70px;
     margin-right:  35px;
@@ -99,23 +99,5 @@
     align-items: center;
     justify-content: space-between;
     flex-shrink: 0;
-
-}
-
-.upload-icon {
-    height: 24px;
-}
-
-.youtube-apps-icon{
-    height: 24px;
-}
-
-
-.notifications-icon {
-    height: 24px;
-}
-
-.current-user-picture {
-    height: 32px;
-    border-radius: 16px ;
+    
 }
